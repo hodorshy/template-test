@@ -25,8 +25,13 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'STATIC': path.join(resolve('static'), 'js'),
+      // 不能使用正则
+      // '^@js/(.*)$': path.resolve(__dirname, "../static/js/$1.js")
       // 'STATIC': resolve('static'),
-    }
+    },
+    modules: [
+      path.resolve(__dirname, "../public"), "node_modules"
+    ]
   },
   // resolveLoader: {
   //   fallback: [path.join(__dirname, '../node_modules')]

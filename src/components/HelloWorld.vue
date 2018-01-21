@@ -8,6 +8,9 @@
 
 import data from 'STATIC/mork.js'
 // import data from '../../static/js/mork.js'
+// import Test from 'zp-test'
+// import Test from '@js/test.js'
+// import '@js/test.js'
 
 export default {
     name: 'HelloWorld',
@@ -29,13 +32,10 @@ export default {
         },
 
         changeMsg() {
+            // let log = console.count('changeMsg');
             this.msg = data.name;
         }
     },
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
